@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz-layout.css">
+</head>
+<body>
+    <div id ="vanta-canvas"></div>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.birds.min.js"></script>
+    <script type ="text/javascript">
+        VANTA.BIRDS({
+          el: "#vanta-canvas",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color1: 0x0,
+        color2: 0xf5f5,
+        birdSize: 1.10,
+        wingSpan: 38.00,
+        speedLimit: 6.00,
+        separation: 30.00,
+        alignment: 36.00,
+        cohesion: 31.00
+        })
+        </script>
+    <form> 
+        <div class = "heading">
+            <h1>MATH QUIZ</h1>
+        </div>
+        <div class="Info">
+            <label for ="user"><b>Name: </b></label>
+            <input type ="text" placeholder="Enter your name" id = "uname" required>
+            <button type="button" onclick="window.location.href='quiz.html';">Login</button>
+            </div>
+        </div>
+        </form>
+
+</div>
+
+</body>
+</html>
